@@ -63,9 +63,9 @@ impl Queue {
         while let Some(person) = current {
             if person.name == name {
                 return Some((person.name.clone(), person.discount));
-            }
+            } 
             current = person.next.as_ref();
         }
         None
     }
-}
+}//done
